@@ -10,13 +10,14 @@ async function fetchResources() {
         if (resources.length === 0) {
             container.innerHTML = '<p>No resources found.</p>';
         } else {
-            container.innerHTML = '<table><tr><th>Name</th><th>Type</th><th>Availability</th><th>Location</th></tr>' +
+            container.innerHTML = '<table><tr><th>Name</th><th>Address</th><th>Hours</th><th>Days</th></tr>' +
                 resources.map(resource => `
                     <tr>
+                        <td>${resource._id}</td>
                         <td>${resource.name}</td>
-                        <td>${resource.type}</td>
-                        <td>${resource.availability}</td>
-                        <td>${resource.location}</td>
+                        <td>${resource.address}</td>
+                        <td>${resource.hours}</td>
+                        <td>${resource.days}</td>
                     </tr>
                 `).join('') +
                 '</table>';

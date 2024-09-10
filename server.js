@@ -28,10 +28,11 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 // Define Schema and Model
 const pantrySchema = new mongoose.Schema({
+  _id: String,
   name: String,
-  type: String,
-  availability: String,
-  location: String
+  address: String,
+  hours: String,
+  days: String
 });
 
 const Pantry = mongoose.model('Pantry', pantrySchema);
