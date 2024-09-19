@@ -49,7 +49,7 @@ app.get('/api/pantries', async (req, res) => {
 
 // Route to serve homepage.html
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/homepage.html');
+  res.sendFile(__dirname + '/public/homePage.html');
 });
 
 // Start server

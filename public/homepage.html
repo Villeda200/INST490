@@ -5,24 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Security Platform</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
-  <style>
-    nav {
-      background: #007bff;
-      padding: 10px;
-      color: #fff;
-    }
-    main-body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background: #f8f9fa;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-      margin-top: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="DVstyle.css">
 </head>
 <body>
 
@@ -52,27 +35,42 @@
     <main-body>
     <!-- Content Sections -->
     <section id="home">
-        <p>Welcome to the Food Security Platform. Navigate through the tabs to explore resources, view locations, and find ways to contribute.</p>
+        <h1>Welcome to the Food Security Platform. Navigate through the tabs to explore resources, view locations, and find ways to contribute.</h1>
     </section>
 
-    <!-- Resources Section -->
-    <section id="resources">
-        <h2>Available Resources</h2>
-        <div class="flex one-100">
-        <table>
-            <tbody>
-              <div id="resources-container"></div> <!-- Container for resources -->
+    <section id = "gallery-section">
 
-            </tbody>
-        </table>
+        <div class="flex three">
+            <div class="tabs four">
+                <input id="tabC-1" type='radio' name='tabGroupC' checked >
+                <input id="tabC-2" type='radio' name='tabGroupC'>
+                <input id="tabC-3" type='radio' name='tabGroupC'>
+                <input id="tabC-4" type='radio' name='tabGroupC'>
+                <div class='row'>
+                <div>
+                    <img src="img\RobertThurston.jpg">
+                </div>
+                <div>
+                    <img src="img/lake.jpg">
+                </div>
+                <div>
+                    <img src="img/halong.jpg">
+                </div>
+                <div>
+                    <img src="img/balloon.jpg">
+                </div>
+                </div>
+                <label for="tabC-1"><img src="img\RobertThurston.jpg"></label>
+                <label for="tabC-2"><img src="img/lake.jpg"></label>
+                <label for="tabC-3"><img src="img/halong.jpg"></label>
+                <label for="tabC-4"><img src="img/balloon.jpg"></label>
+            </div>
         </div>
     </section>
     </main-body>
 <footer>
   
 </footer>
-<script src="/tableScript.js"></script>
-
 
 </body>
 </html>

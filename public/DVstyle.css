@@ -1,0 +1,37 @@
+nav {
+    background: #007bff;
+    padding: 10px;
+    color: #fff;
+  }
+
+  main-body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+  }
+
+  #gallery-section img {
+    width: 75%; /* Set the image width to 75% */
+    height: auto;  /* Maintain the aspect ratio */
+    display: block;  /* Make the image a block-level element */
+    margin: 0 auto;  /* Center the image horizontally */
+  }
+  
+  #gallery-section .row div {
+    text-align: center; /* Center the image inside each div */
+  }
+  
+  #gallery-section label img {
+    width: 20%; /* Adjust the label images to a smaller size */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center label images horizontally */
+  }
+  
